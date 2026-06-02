@@ -1,0 +1,357 @@
+/* CSS Reset: http://meyerweb.com/eric/tools/reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**************************************************/
+/* Base */
+
+#body {
+  font-family: 'Asap', roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #172033;
+  background: #ffffff;
+}
+
+#main {
+  width: 54em;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  color: #2269b1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #124f8f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.45em;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35em;
+}
+
+/**************************************************/
+/* Intro */
+
+#intro {
+  padding-top: 5.3em;
+  padding-bottom: 2.1em;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #edf0f5;
+}
+
+#intro-text {
+  width: 31.5em;
+  float: left;
+}
+
+.bio-text {
+  color: #394456;
+  line-height: 1.65;
+  margin-bottom: 0.85em;
+}
+
+.status-line {
+  display: inline-block;
+  margin: 0.2em 0 0.7em 0;
+  padding: 0.25em 0.65em;
+  border-radius: 999px;
+  background: #f5f8fb;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.94em;
+}
+
+.contact-line {
+  color: #4b5563;
+  margin-bottom: 0.7em;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin-right: 1.15em;
+  font-weight: 500;
+}
+
+#intro-image {
+  margin: 0.45em 0 0 3em;
+  width: 13.6em;
+  height: 13.6em;
+  float: left;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #edf0f5;
+  background: #f8fafc;
+}
+
+#intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/**************************************************/
+/* Section buttons */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#filters {
+  margin-top: 1.25em;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #8a94a6;
+  font-size: 1.45em;
+  line-height: 2.1em;
+  margin-top: 0.25em;
+  margin-right: 1.25em;
+  float: left;
+  padding: 0;
+  font-weight: 500;
+}
+
+#research-filters .button {
+  font-size: 1.02em;
+  line-height: 1.8em;
+  margin-top: 0.1em;
+  margin-right: 1.1em;
+}
+
+.button:hover,
+.button:active,
+.button.is-checked {
+  color: #172033;
+}
+
+/**************************************************/
+/* Isotope grid list */
+
+.grid {
+  padding-bottom: 6em;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.description {
+  margin-bottom: 1em;
+}
+
+.list-item {
+  width: 100%;
+  line-height: 1.35;
+  margin-top: 0.9em;
+}
+
+.list-item p.date,
+.list-item .date {
+  display: inline-block;
+  width: 4.8em;
+  color: #8a94a6;
+  font-weight: 500;
+}
+
+/**************************************************/
+/* Publications */
+
+.publication {
+  box-sizing: border-box;
+  min-height: 7.9em;
+  padding: 0.85em 0;
+  margin-bottom: 0.2em;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.publication:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.thumbnail {
+  width: 18%;
+  float: left;
+  margin-right: 2.4%;
+}
+
+.thumbnail:hover {
+  text-decoration: none;
+}
+
+.thumbnail img,
+.thumbnail video {
+  width: 100%;
+  height: auto;
+  margin-top: 0.2em;
+  display: block;
+  border-radius: 9px;
+  border: 1px solid #edf0f5;
+  background: #f8fafc;
+}
+
+.project-description {
+  width: 79.6%;
+  float: left;
+}
+
+h3 {
+  font-size: 1.03em;
+  line-height: 1.4;
+  color: #172033;
+  font-weight: 600;
+  margin-bottom: 0.22em;
+}
+
+h3 a {
+  color: #172033;
+}
+
+h3 a:hover {
+  color: #2269b1;
+}
+
+.publication p {
+  font-size: 0.96em;
+  line-height: 1.58;
+  color: #667085;
+}
+
+.publication .project-description a {
+  display: inline-block;
+  margin-top: 0.34em;
+  margin-right: 0.75em;
+  color: #2269b1;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.publication .project-description a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+.award-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0.32em 0 0.08em 0;
+  padding: 0.16em 0.66em;
+  border: 1px solid #d1a11f;
+  border-radius: 999px;
+  background: #fff8df;
+  color: #7a5200;
+  font-size: 0.9em;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+/**************************************************/
+/* Honors, news, services */
+
+.highlight,
+.talk,
+.misc {
+  padding: 0.45em 0;
+  color: #394456;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.talk .text,
+.misc {
+  color: #394456;
+}
+
+/**************************************************/
+/* Footer */
+
+#footer {
+  color: #8a94a6;
+  position: absolute;
+  bottom: 0;
+  line-height: 2.5em;
+  font-size: 0.92em;
+}
+
+#footer img {
+  vertical-align: middle;
+}

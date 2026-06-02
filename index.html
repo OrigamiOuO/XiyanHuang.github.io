@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <!-- Title -->
+    <title>Xiyan Huang</title>
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body id="body">
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Xiyan Huang</h1>
+          <p class="bio-text">
+            I am Xiyan Huang, a Master's graduate in Computer Science from <a href="https://www.shanghaitech.edu.cn/">ShanghaiTech University</a>, where I was a member of the <a href="https://star-center.shanghaitech.edu.cn/">ShanghaiTech Automation and Robotics (STAR) Center</a>, advised by <a href="https://rim-laboratory.github.io/">Prof. Chenxi Xiao</a>. My research interest lies in tactile-driven dexterous hand manipulation, aspiring to enable robots to interact with the world as adeptly as humans and achieve self-evolution.
+          </p>
+          <p class="status-line">即将加入 上海智元机器人(AGI Bot)</p>
+          <p class="contact-line">
+            Email: origami@shanghaitech.edu.cn
+          </p>
+          <p class="profile-links">
+            <a href="https://github.com/OrigamiOuO">Github</a>
+            <a href="https://scholar.google.com/citations?user=nhn5L_YAAAAJ&hl=en">Google Scholar</a>
+            <!-- TODO: 添加其他链接（Google Scholar, Twitter等） -->
+          </p>
+        </div>
+        <div id="intro-image">
+          <img src="media/images/main_page/Xiyan.jpg" alt="Xiyan Huang">
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <button class="button is-checked" data-filter=".publication" id="research-btn">Research</button>
+        <button class="button" data-filter=".talk">News</button>
+        <button class="button" data-filter=".misc">Services</button>
+      </div>
+
+      <div id="research-filters" class="button-group" style="margin: 10px 0; display: none;">
+        <button id="show-selected-btn" class="button is-checked">Selected</button>
+        <button id="show-all-btn" class="button">All by date</button>
+      </div>
+
+      <div class="grid">
+
+        <!-- Publications -->
+
+        <div class="list-item publication selected-publication" data-category="publication selected-publication">
+          <a class="thumbnail"><img src="media/images/main_page/placeholder.jpg" alt="Placeholder" /></a>
+          <div class="project-description">
+            <h3>Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning</h3>
+            <p>
+              <i>Shengcheng Luo<sup>^</sup>, <b>Xiyan Huang<sup>^</sup></b>, Zhe Xu, Chenxi Xiao*</i><br>
+              <i><sup>^</sup> Equal contribution.</i><br>
+              <i>Under Review</i><br>
+              <a href="#">PDF</a>
+              <a href="#">Webpage</a>
+              <a href="#">Code</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication selected-publication" data-category="publication selected-publication">
+          <a class="thumbnail"><img src="media/images/main_page/Etac.gif" alt="ETac project thumbnail" /></a>
+          <div class="project-description">
+            <h3>ETac: A Lightweight and Efficient Tactile Simulation Framework for Learning Dexterous Manipulation</h3>
+            <p>
+              <i>Zhe Xu, Feiyu Zhao, <b>Xiyan Huang</b>, Chenxi Xiao*</i><br>
+              <i>2026 IEEE International Conference on Robotics & Automation (ICRA)</i><br>
+              <span class="award-badge">🏆 ICRA 2026 Best Paper Finalist</span><br>
+              <a href="https://arxiv.org/pdf/2604.20295" target="_blank">PDF</a>
+              <a href="https://lassford.github.io/ETac/" target="_blank">Webpage</a>
+              <a href="https://github.com/FerryRain/NLiPs" target="_blank">Code</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication selected-publication" data-category="publication selected-publication">
+          <a class="thumbnail"><img src="media/images/main_page/TwinTac.png" alt="TwinTac project thumbnail" /></a>
+          <div class="project-description">
+            <h3>TwinTac: A Wide-Range, Highly Sensitive Tactile Sensor with Real-to-Sim Digital Twin Sensor Model</h3>
+            <p>
+              <i><b>Xiyan Huang</b>, Zhe Xu, Chenxi Xiao*</i><br>
+              <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)</i><br>
+              <a href="https://arxiv.org/abs/2509.10063" target="_blank">arXiv</a>
+              <a href="https://arxiv.org/pdf/2509.10063" target="_blank">PDF</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Honors 暂缺 -->
+
+        <!-- News -->
+        <div class="list-item talk" data-category="talk">
+          <span class="date"><!-- YYYY-MM --></span>
+          <span class="text"><!-- TODO: 新闻动态 --></span>
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <span class="date"><!-- YYYY-MM --></span>
+          <span class="text"><!-- TODO: 新闻动态 --></span>
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Conference Reviewer, ICRA 2026
+        </div>
+
+        <div class="list-item misc" data-category="misc">
+          <p class="date"></p>Conference Reviewer, IROS 2025
+        </div>
+      </div>
+
+      <div id="footer">
+        <!-- TODO: 可添加页脚信息 -->
+      </div>
+    </div>
+
+    <script>
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false
+      });
+
+      $('#research-btn').on('click', function() {
+        $('#research-filters').show();
+        $('#show-selected-btn').addClass('is-checked');
+        $('#show-all-btn').removeClass('is-checked');
+        $grid.isotope({ filter: '.selected-publication' });
+      });
+
+      $('#show-selected-btn').on('click', function() {
+        $grid.isotope({ filter: '.selected-publication' });
+      });
+
+      $('#show-all-btn').on('click', function() {
+        $grid.isotope({ filter: '.publication' });
+      });
+
+      $('#filters').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        if (filterValue === '.publication') {
+          $('#research-filters').show();
+          $grid.isotope({ filter: '.selected-publication' });
+        } else {
+          $('#research-filters').hide();
+          $grid.isotope({ filter: filterValue });
+        }
+      });
+
+      $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        $('#research-btn').addClass('is-checked');
+        $('#research-filters').show();
+        $('#show-selected-btn').addClass('is-checked');
+        $('#show-all-btn').removeClass('is-checked');
+        $grid.isotope({ filter: '.selected-publication' });
+      }
+
+      update_isotope();
+    </script>
+  </body>
+</html>
